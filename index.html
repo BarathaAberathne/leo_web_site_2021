@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Givest – Non Profit Bootstrap 5 HTML Template</title>
+  <title>MRLeos – Leo Club of Moratuwa Rathmalana</title>
 
   <!--== Favicon ==-->
   <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" />
@@ -84,10 +84,10 @@
                       <li><a href="blog-details.html">Blog Single</a></li>
                     </ul>
                   </li>
-                  <li class="has-submenu"><a href="index.html">Pages</a>
+                  <li class="has-submenu"><a href="committee.html">Committee</a>
                     <ul class="submenu-nav">
                       <li><a href="event-details.html">Event Details</a></li>
-                      <li><a href="volunteer.html">Volunteer</a></li>
+                      <li><a href="committee.html">Committee</a></li>
                     </ul>
                   </li>
                   <li><a href="contact.html">Contact Us</a></li>
@@ -99,8 +99,8 @@
                   <span></span>
                   <span></span>
                 </button>
-                <a href="contact.html" class="btn-theme btn-gradient btn-slide btn-style">Give Support <img
-                    class="icon icon-img" src="assets/img/icons/arrow-line-right2.png" alt="Icon"></a>
+                <a href="application.html" class="btn-theme btn-gradient btn-slide">Join Now <img class="icon icon-img"
+                    src="assets/img/icons/arrow-line-right2.png" alt="Icon"></a>
               </div>
             </div>
           </div>
@@ -129,8 +129,8 @@
                         <h2>Welcome to the <span>Leo Club of</span> Moratuwa Rathmalana.</h2>
                       </div>
                       <div class="btn-wrp">
-                <a href="volunteer.html" class="btn-theme btn-gradient btn-slide">Join Now <img class="icon icon-img"
-                    src="assets/img/icons/arrow-line-right2.png" alt="Icon"></a>
+                        <a href="application.html" class="btn-theme btn-gradient btn-slide">Join Now <img
+                            class="icon icon-img" src="assets/img/icons/arrow-line-right2.png" alt="Icon"></a>
                         <!-- <a href="#/" class="btn-theme btn-border btn-black btn-style">Donate Now <img
                             class="icon icon-img" src="assets/img/icons/arrow-right-line-dark.png" alt="Icon"></a> -->
                       </div>
@@ -213,7 +213,7 @@
                     <img src="assets/img/shape/line-s1.png" alt="Givest-HasTech">
                   </div>
                   <p>Leo members acquire skills as project organizers and motivators of their
-                  peers.</p>
+                    peers.</p>
                   <!-- <a href="causes-details.html" class="btn-theme btn-white btn-border btn-size-md">View Details <img
                       class="icon icon-img" src="assets/img/icons/arrow-line-right.png" alt="Icon"></a> -->
                 </div>
@@ -238,8 +238,8 @@
                     <img src="assets/img/shape/line-s1.png" alt="Givest-HasTech">
                   </div>
                   <p>They discover how teamwork
-                  and cooperation can bring about change in
-                  their community and the world.</p>
+                    and cooperation can bring about change in
+                    their community and the world.</p>
                   <!-- <a href="causes-details.html" class="btn-theme btn-white btn-border btn-size-md">View Details <img
                       class="icon icon-img" src="assets/img/icons/arrow-line-right.png" alt="Icon"></a> -->
                 </div>
@@ -264,8 +264,8 @@
                     <img src="assets/img/shape/line-s1.png" alt="Givest-HasTech">
                   </div>
                   <p>: Leos develop positive
-                  character traits and receive recognition
-                  for their contributions.</p>
+                    character traits and receive recognition
+                    for their contributions.</p>
                   <!-- <a href="causes-details.html" class="btn-theme btn-white btn-border btn-size-md">View Details <img
                       class="icon icon-img" src="assets/img/icons/arrow-line-right.png" alt="Icon"></a> -->
                 </div>
@@ -340,7 +340,7 @@
             </div>
           </div>
           <div class="row" data-aos="fade-up" data-aos-duration="1000" id="blog_post_list">
-            
+
           </div>
         </div>
       </section>
@@ -372,7 +372,8 @@
                           <div class="quote-icon">“</div>
                         </div>
                         <div class="client-content">
-                          <p>The leap into electronic typesetting, essentially unchanged was popularised the release Letraset
+                          <p>The leap into electronic typesetting, essentially unchanged was popularised the release
+                            Letraset
                             sheets containing and more recently desktop publishing like Aldus maker including.</p>
                         </div>
                         <div class="client-info">
@@ -389,7 +390,8 @@
                           <div class="quote-icon">“</div>
                         </div>
                         <div class="client-content">
-                          <p>It is long established fact that reader will distract by the readable content a page when looking
+                          <p>It is long established fact that reader will distract by the readable content a page when
+                            looking
                             atten layout. The point of using and that it has a normal distribution of letters</p>
                         </div>
                         <div class="client-info">
@@ -935,25 +937,25 @@
             html += '    <ul class="donate-info">';
             html += '     <li class="info-item">';
             html += '       <span class="info-title">Year:</span>';
-            html += '       <span class="amount">'+albumYear+'</span>';
+            html += '       <span class="amount">' + albumYear + '</span>';
             html += '     </li>';
             html += '     <li class="info-item">';
             html += '    <span class="info-title">Month:</span>';
-            html += '    <span class="amount">'+albumMonth+'</span>';
+            html += '    <span class="amount">' + albumMonth + '</span>';
             html += '  </li>';
             html += '  <li class="info-item">';
             html += '    <span class="info-title">Participants:</span>';
-            html += '    <span class="amount">'+response.data[i].count+'</span>';
+            html += '    <span class="amount">' + response.data[i].count + '</span>';
             html += '  </li>';
             html += '</ul>';
-            html += '<h4 class="title"><a href="causes-details.html">'+response.data[i].name+'</a>';
+            html += '<h4 class="title"><a href="causes-details.html">' + response.data[i].name + '</a>';
             html += '</h4>';
-            html += ' <p>'+response.data[i].description+'</p >';
+            html += ' <p>' + response.data[i].description + '</p >';
             html += '</div>';
             html += '<div class="causes-footer">';
             html += ' <div class="admin">';
             html += '</div>';
-            html += '     <a class="btn-theme btn-border-gradient gray-border btn-size-md" href="blog-details.html?id='+ response.data[i].id+'""><span>Read Now <img';
+            html += '     <a class="btn-theme btn-border-gradient gray-border btn-size-md" href="blog-details.html?id=' + response.data[i].id + '""><span>Read Now <img';
             html += '       class="icon icon-img" src="assets/img/icons/arrow-line-right-gradient.png"';
             html += '       alt="Icon"></span></a>';
             html += ' </div>';
