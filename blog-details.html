@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Blog Details – Givest – Non Profit Bootstrap 5 HTML Template</title>
+  <title>Projects - Leo club of Moratuwa - Ratmalana</title>
 
   <!--== Favicon ==-->
   <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" />
@@ -138,37 +138,23 @@
                       <img class="w-100" src="" alt="Givest-HasTech" id="featured-image">
                     </div>
                     <div class="content">
-                      <div class="meta">
-                        <a class="post-category" href="blog.html">Education</a>
-                        <a class="post-author" href="blog.html"><span class="icon"><img class="icon-img"
-                              src="assets/img/icons/admin1.png" alt="Icon-Image"></span>By: Marinda Roderick</a>
-                      </div>
-                      <h2 class="title" id="blog-title">Children Education Needs For Change The World.</h2>
+                      <div id="project-category-div" class="meta">
+                        <a class="post-category" id="project-categories" href="blog.html">Education</a>
+                        <a class="post-category" id="project-categories" href="blog.html">aaa</a>
 
-                      <p class="mb-0" id="blog-description">Contrary to popular belief, Lorem Ipsum is not simply random
-                        text. It has roots in
-                        a piece of classical literature from 459, making it over 2000 years old. Richard McClintock, a
-                        Latin professor at Virginia looked up one of the more obscure Latin words, consectetur, from a
-                        Lorem Ipsum passage, and going through the cites of the word in classical literature.</p>
+                      </div>
+                      <h2 class="title" id="blog-title"></h2>
+
+                      <p class="mb-0" id="blog-description"></p>
                       <div class="blockquote-area">
                         <blockquote class="blockquote-style">
-                          <p>Contrary to popular belief not simply random has roots in a piece of classical Latin
-                            literature making it over 2000 years old Latin professort looked up one of the more.</p>
-                          <div class="icon">“</div>
+                          <!-- <p>Contrary to popular belief not simply random has roots in a piece of classical Latin
+                            literature making it over 2000 years old Latin professort looked up one of the more.</p> -->
+                          <div class="icon"></div>
                         </blockquote>
                       </div>
-                      <h2 class="title">Children Education Needs For Change The World.</h2>
-                      <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
-                        classical literature from 459, making it over 2000 years old. Richard McClintock, a Latin
-                        professor at Virginia looked up one of the more obscure Latin words, consectetur, from a Lorem
-                        Ipsum passage, and going through the cites of the word in classical literature, discovered the
-                        undoubtable source. Lorem Ipsum comes from written in 45 BC. This book is a treatise on the
-                        theory.</p>
-                      <p class="mb-31">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots
-                        in a piece of classical literature from 459, making it over 2000 years old. Richard McClintock,
-                        a Latin professor at Virginia looked up one of the more obscure Latin words, consectetur, from a
-                        Lorem Ipsum passage, and going through the cites of the word in classical literature.</p>
-                      <div class="row mb-32">
+
+                      <div id="blog-post-gallery" class="row mb-32">
                         <div class="col-sm-4">
                           <img class="w-100 mb-xs-30" src="assets/img/blog/s1.jpg" alt="Image-Givest">
                         </div>
@@ -179,17 +165,7 @@
                           <img class="w-100" src="assets/img/blog/s3.jpg" alt="Image-Givest">
                         </div>
                       </div>
-                      <h2 class="title">Children Education Needs For Change The World.</h2>
-                      <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
-                        classical literature from 459, making it over 2000 years old. Richard McClintock, a Latin
-                        professor at Virginia looked up one of the more obscure Latin words, consectetur, from a Lorem
-                        Ipsum passage, and going through the cites of the word in classical literature, discovered the
-                        undoubtable source. Lorem Ipsum comes from written in 45 BC. This book is a treatise on the
-                        theory.</p>
-                      <p class="mb-0">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in
-                        a piece of classical literature from 459, making it over 2000 years old. Richard McClintock, a
-                        Latin professor at Virginia looked up one of the more obscure Latin words, consectetur, from a
-                        Lorem Ipsum passage, and going through the cites of the word in classical literature.</p>
+
                       <div class="category-social-content">
                         <div class="social-items">
                           <a href="#/"><i class="icofont-facebook"></i></a>
@@ -604,16 +580,63 @@
         version: 'v4.0'
       });
       FB.api(
-        '/' + query[1] + '?fields=description,created_time,name,location,cover_photo,picture,likes,comments,count,link',
+        '/' + query[1] + '?fields=description,created_time,name,location,cover_photo,picture,likes,comments,count,link,photos',
         'GET',
         {},
         function (response) {
-          console.log('ssss' + JSON.stringify(response));
+          var AlbumDescription = response.description;
+          //Get Project Description
+          if (AlbumDescription.includes("Summary")) {
+            //Get summary
+            var projectSummaryTemp = AlbumDescription.split('|')[0];
+            var projectSummary = projectSummaryTemp.split(':')[1];
+            console.log('summaryTemp' + projectSummary);
+            //Get Project Date
+            var projectDateTemp = AlbumDescription.split('|')[2];
+            var projectDate = projectDateTemp.split(':')[1];
+            var projectYear = projectDate.split('/')[2];
+            var projectMonth = projectDate.split('/')[1];
+            console.log('Date is' + projectMonth);
+            //Get Project Categories
+            var projectCatTemp = AlbumDescription.split('|')[1];
+            console.log('projectCatTemp' + projectCatTemp);
+            var projectCatList = projectCatTemp.split(':')[1];
+            var projectCatCount = projectCatList.split(',').length;
+            console.log('projectCatCount' + projectCatCount);
+
+          }
+
           document.getElementById("featured-image").src = 'https://graph.facebook.com/' + response.cover_photo.id + '/picture?type=normal&access_token=' + token;
           document.getElementById("blog-title").innerHTML = response.name;
-          document.getElementById("breadcomb-blog-title").innerHTML = response.name;
-          document.getElementById("blog-description").innerHTML = response.description;
-          document.getElementById("blog-likes").innerHTML = response.count + " people like this"
+          //document.getElementById("breadcomb-blog-title").innerHTML = response.name;
+          document.getElementById("blog-description").innerHTML = projectSummary;
+
+          //Set Project Categories
+          projectCatHtml = '';
+          for (let index = 0; index < projectCatCount; index++) {
+            console.log('projectCatList...' + projectCatList);
+
+            var category = projectCatList.split(',')[index];
+            console.log('category' + category);
+
+            projectCatHtml += '<a class="post-category" id="project-categories" href="blog.html">' + category + '</a>';
+          }
+          $('#project-category-div').empty().append(projectCatHtml);
+
+          //Set Photo Gallery
+          var galleryCount = Object.keys(response.photos.data).length;
+          var postList = '';
+          if (galleryCount > 6) {
+            galleryCount = 6;
+          }
+          for (let index = 0; index < galleryCount; index++) {
+            console.log(response.photos.data[index].id);
+            postList += '<div class="col-sm-4">';
+            postList += '<img class="w-100 mb-xs-30" src="https://graph.facebook.com/' + response.photos.data[index].id + '/picture?type=normal&access_token=' + token + '" alt="Image-Givest">';
+            postList += '</div>';
+          }
+          $('#blog-post-gallery').empty().append(postList);
+
         }
         , { access_token: token });
       FB.api(
