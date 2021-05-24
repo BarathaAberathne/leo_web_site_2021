@@ -68,7 +68,7 @@ a:hover,
 a:active,
 a:focus {
   box-shadow: none;
-  color: #e53603;
+  color: #009255;
   outline: none;
   text-decoration: none;
 }
@@ -6659,7 +6659,7 @@ table p {
 -----------------------------------------------------------------------
 */
 .events-area.events-default-area {
-  padding: 145px 0 120px;
+  padding: 145px 0 300px;
 }
 @media only screen and (max-width: 1199px) {
   .events-area.events-default-area {
