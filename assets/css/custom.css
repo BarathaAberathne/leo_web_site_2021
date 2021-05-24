@@ -41,3 +41,9 @@ img.zoom {
 .modal-footer {
   display: none;
 }
+
+.carousel-caption {
+  top: 30%;
+  transform: translateY(-50%);
+  text-align: left;
+}
