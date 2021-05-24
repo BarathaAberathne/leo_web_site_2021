@@ -5,11 +5,11 @@
 */
 
 .home-slider-area {
-	&.slider-default {
-		position: relative;
-		.home-slider-content {
-			.home-slider-item {
-				height: 900px;
+  &.slider-default {
+    position: relative;
+    .home-slider-content {
+      .home-slider-item {
+        height: 900px;
         @media #{$xl-device} {
           height: 800px;
         }
@@ -25,16 +25,16 @@
         @media #{$xs-device} {
           height: 360px;
         }
-			}
-		}
+      }
+    }
     .slider-content-area {
-    	align-items: center;
-    	display: flex;
-    	height: 100%;
-    	padding-top: 124px;
-    	position: relative;
-      @media (max-width:1799px) {
-        padding-top: 45px;
+      align-items: center;
+      display: flex;
+      height: 92%;
+      padding-top: 30px;
+      position: relative;
+      @media (max-width: 1799px) {
+        padding-top: 10px;
       }
       @media #{$md-device} {
         padding-top: 15px;
@@ -46,15 +46,15 @@
         padding-top: 58px;
       }
       .container {
-        @media (min-width:1400px) and (max-width:1799px) {
+        @media (min-width: 1400px) and (max-width: 1799px) {
           max-width: 1397px;
           padding-left: 15px;
           padding-right: 15px;
         }
       }
-    	.content {
+      .content {
         margin-top: 27px;
-        @media (max-width:1799px) {
+        @media (max-width: 1799px) {
           margin-top: 15px;
           padding-right: 135px;
         }
@@ -69,37 +69,37 @@
           margin: 0 auto;
           max-width: 450px;
         }
-    		.subtitle-content {
-    			margin-bottom: 28px;
+        .subtitle-content {
+          margin-bottom: 28px;
           @media #{$md-device} {
             margin-bottom: 20px;
           }
-    			img {
-    				margin-right: 14px;
+          img {
+            margin-right: 14px;
             position: relative;
             top: -9px;
             @media #{$xs-device} {
               top: -4px;
               width: 30px;
             }
-    			}
-    			h6 {
-    				display: inline-block;
-    				font-family: $font-current-theme1;
-    				font-size: 22px;
-    				font-weight: $font-weight-bold;
-    				margin: 0;
-    				@include gradient-text();
+          }
+          h6 {
+            display: inline-block;
+            font-family: $font-current-theme1;
+            font-size: 22px;
+            font-weight: $font-weight-bold;
+            margin: 0;
+            @include gradient-text();
             @media #{$xs-device} {
               font-size: 18px;
             }
-    			}
-    		}
-    		.tittle-wrp {
-    			margin-bottom: 30px;
-    			h2 {
-    				font-size: 75px;
-    				line-height: 1.0934;
+          }
+        }
+        .tittle-wrp {
+          margin-bottom: 30px;
+          h2 {
+            font-size: 75px;
+            line-height: 1.0934;
             @media #{$xl-device} {
               font-size: 60px;
             }
@@ -118,7 +118,7 @@
               position: relative;
               z-index: 1;
               &:before {
-                background-image: url('../img/shape/banner-title-shape.png');
+                background-image: url("../img/shape/banner-title-shape.png");
                 background-repeat: no-repeat;
                 background-position: 13px 9px;
                 content: "";
@@ -139,17 +139,17 @@
                 }
               }
             }
-    			}
-    		}
-    		.btn-wrp {
+          }
+        }
+        .btn-wrp {
           align-items: center;
           display: flex;
           @media #{$sm-device} {
             justify-content: center;
             text-align: left;
           }
-    			.btn-theme {
-    				margin-right: 21px;
+          .btn-theme {
+            margin-right: 21px;
             @media #{$md-device} {
               margin-right: 10px;
               min-width: 155px;
@@ -175,15 +175,15 @@
                 }
               }
             }
-    				&:last-child {
-    					margin-right: 0;
-    				}
+            &:last-child {
+              margin-right: 0;
+            }
             &.btn-black {
               &.btn-border {
                 border: 1px solid #d7d7d7;
                 color: $theme-color3;
                 padding: 20px 36px;
-                @include transition(.0s);
+                @include transition(0s);
                 @media #{$md-device} {
                   min-width: 160px;
                   padding: 15px 25px;
@@ -194,7 +194,7 @@
                 }
                 .icon {
                   right: 38px;
-                  @include transition(.0s);
+                  @include transition(0s);
                   @media #{$md-device} {
                     right: 20px;
                     width: 12px;
@@ -212,7 +212,7 @@
                   z-index: 1;
                   @include gradient-bg();
                   &:before {
-                    background-color: rgba($white, .2);
+                    background-color: rgba($white, 0.2);
                     border-radius: 50%;
                     bottom: -40px;
                     content: "";
@@ -223,7 +223,7 @@
                     z-index: -1;
                   }
                   &:after {
-                    background-color: rgba($white, .2);
+                    background-color: rgba($white, 0.2);
                     border-radius: 50%;
                     content: "";
                     height: 65px;
@@ -232,7 +232,7 @@
                     top: -40px;
                     width: 65px;
                     z-index: -1;
-                  }                  
+                  }
                   img {
                     filter: invert(1) brightness(100);
                     right: 38px;
@@ -246,14 +246,14 @@
                 }
               }
             }
-    			}
-    		}
-    	}
-    	.layer-style {
+          }
+        }
+      }
+      .layer-style {
         margin-top: 54px;
-    		position: relative;
-    		right: -86px;
-        @media (max-width:1799px) {
+        position: relative;
+        right: -86px;
+        @media (max-width: 1799px) {
           margin-top: 0;
           right: 30px;
           top: 10px;
@@ -267,24 +267,24 @@
         @media #{$sm-device} {
           display: none;
         }
-    		.thumb {
-    			border-radius: 50%;
-    			img {
-    				border-radius: 50%;
-    				max-width: none;
-            @media (max-width:1799px) {
+        .thumb {
+          border-radius: 50%;
+          img {
+            border-radius: 50%;
+            max-width: none;
+            @media (max-width: 1799px) {
               max-width: 100%;
             }
-    			}
-    			.shape-circle {
-    				border-radius: 50%;
-    				height: 100%;
-    				left: 15px;
-    				position: absolute;
-    				top: -86px;
-    				width: 100%;
+          }
+          .shape-circle {
+            border-radius: 50%;
+            height: 100%;
+            left: 15px;
+            position: absolute;
+            top: -86px;
+            width: 100%;
             pointer-events: none;
-            @media (max-width:1799px) {
+            @media (max-width: 1799px) {
               top: -70px;
             }
             @media #{$lg-device} {
@@ -293,11 +293,11 @@
             @media #{$md-device} {
               top: -35px;
             }
-    				.circle-img {
-    					position: absolute;
-    					right: -170px;
-					    top: 109px;
-              @media (max-width:1799px) {
+            .circle-img {
+              position: absolute;
+              right: -170px;
+              top: 109px;
+              @media (max-width: 1799px) {
                 right: -12px;
               }
               @media #{$xl-device} {
@@ -312,14 +312,14 @@
                 right: -10px;
                 width: 40px;
               }
-    				}
-    			}
-    		}
-    		.shape-style1 {
-    			position: absolute;
-			    right: -105px;
-			    top: -159px;
-          @media (max-width:1799px) {
+            }
+          }
+        }
+        .shape-style1 {
+          position: absolute;
+          right: -105px;
+          top: -159px;
+          @media (max-width: 1799px) {
             right: 60px;
           }
           @media #{$lg-device} {
@@ -337,16 +337,16 @@
             }
           }
         }
-    		.donate-circle-wrp {
-    			bottom: -39px;
-    			border-radius: 50%;
-    			height: 340px;
-    			left: -169px;
-    			padding: 43px;
-    			position: absolute;
-    			width: 340px;
-    			@include gradient-bg-style;
-          @media (max-width:1799px) {
+        .donate-circle-wrp {
+          bottom: -39px;
+          border-radius: 50%;
+          height: 340px;
+          left: -169px;
+          padding: 43px;
+          position: absolute;
+          width: 340px;
+          @include gradient-bg-style;
+          @media (max-width: 1799px) {
             bottom: -90px;
           }
           @media #{$lg-device} {
@@ -370,43 +370,43 @@
               }
             }
           }
-    			.donate-content {
-    				border-radius: 50%;
-    				color: $white;
+          .donate-content {
+            border-radius: 50%;
+            color: $white;
             left: 50%;
-    				text-align: center;
-    				position: absolute;
+            text-align: center;
+            position: absolute;
             top: calc(50% + 2px);
             @include translate(-50%, -50%);
-    				.raised-amount {
-    					font-family: $font-current-theme2;
-    					font-size: 50px;
+            .raised-amount {
+              font-family: $font-current-theme2;
+              font-size: 50px;
               line-height: 1;
-    					margin-bottom: 12px;
+              margin-bottom: 12px;
               @media #{$lg-device} {
                 font-size: 24px;
                 margin-bottom: 10px;
               }
-    				}
-    				.line-shape-img {
-    					margin-bottom: 13px;
+            }
+            .line-shape-img {
+              margin-bottom: 13px;
               @media #{$lg-device} {
                 width: 55px;
                 margin-bottom: 10px;
               }
-    				}
-    				.donate-title {
-    					color: $white;
-    					font-size: 20px;
-    					margin: 0;
+            }
+            .donate-title {
+              color: $white;
+              font-size: 20px;
+              margin: 0;
               @media #{$lg-device} {
                 font-size: 13px;
               }
-    				}
-    			}
-    		}
-    	}
-    	.slider-shape {
+            }
+          }
+        }
+      }
+      .slider-shape {
         .shape-style1 {
           position: absolute;
           right: 0;
@@ -440,7 +440,7 @@
           position: absolute;
           top: 0;
           z-index: 0;
-          @media (max-width:1799px) {
+          @media (max-width: 1799px) {
             top: -130px;
           }
           @media #{$lg-device} {
@@ -453,8 +453,7 @@
             display: none;
           }
         }
-    	}
+      }
     }
-	}
+  }
 }
-

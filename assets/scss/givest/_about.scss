@@ -190,12 +190,12 @@
       @media #{$md-device} {
         margin-bottom: 60px;
       }
-      @media (max-width:399.98px) {
+      @media (max-width: 399.98px) {
         text-align: center;
         .title {
           font-size: 23px;
         }
-      }      
+      }
     }
     .thumb {
       &.thumb-style {
@@ -230,7 +230,7 @@
 }
 
 .content-box-item {
-  background-color: #fc6539;
+  background-color: #00693e;
   padding: 62px 35px 48px 43px;
   position: relative;
   z-index: 1;
@@ -244,7 +244,7 @@
     padding-left: 28px;
     position: relative;
     &:before {
-      background-color: rgba($white, .15);
+      background-color: rgba($white, 0.15);
       border-radius: 50%;
       content: "";
       height: 82.5px;
