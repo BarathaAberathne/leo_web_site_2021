@@ -5248,7 +5248,7 @@ table p {
 -----------------------------------------------------------------------
 */
 .about-area.about-default-area {
-  padding: 146px 0 15px;
+  padding: 20px 0 15px;
   position: relative;
 }
 @media only screen and (max-width: 991px) {
@@ -6158,7 +6158,7 @@ table p {
 -----------------------------------------------------------------------
 */
 .causes-area.causes-default-area {
-  padding: 148px 0 152px;
+  padding: 80px 0 152px;
 }
 @media only screen and (max-width: 1199px) {
   .causes-area.causes-default-area {
@@ -8404,7 +8404,7 @@ table p {
   }
 }
 .icon-box-style1 .icon-box-item.item-two .icon-box .icon-img {
-  min-width: 87px;
+  min-width: 76px;
 }
 @media only screen and (max-width: 1199px) {
   .icon-box-style1 .icon-box-item.item-two .icon-box .icon-img {
@@ -8428,7 +8428,7 @@ table p {
   }
 }
 .icon-box-style1 .icon-box-item.item-three .icon-box .icon-img {
-  min-width: 83px;
+  min-width: 76px;
 }
 @media only screen and (max-width: 1199px) {
   .icon-box-style1 .icon-box-item.item-three .icon-box .icon-img {
