@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Become Volunteer – Givest – Non Profit Bootstrap 5 HTML Template</title>
+  <title>EXCO - MRLeos</title>
 
   <!--== Favicon ==-->
   <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon" />
@@ -468,25 +468,54 @@
         // do something with myJson
         var html = '';
         clubList.forEach(function (item) {
-          console.log('image id ' + item.leo_image);
-          html +='<div class="col-sm-6 col-lg-4">';
-            html +='  <div class="team-member">';
-              html +='  <div class="thumb">';
-                html +='  <img src="'+item.leo_image+'" alt="Image">';
-                html +='<div class="social-icons">';
-                  html +='  <a href="#"><i class="icofont-facebook"></i></a>';
-                  html +='<a href="#"><i class="icofont-skype"></i></a>';
-                  html +='<a href="#"><i class="icofont-twitter"></i></a>';
-                  html +=' </div>';
-                  html +='</div>';
-                  html +='<div class="content">';
-                    html +='<div class="member-info">';
-                      html +='<h4 class="name"><a href="#/">'+item.leo_name+'</a></h4>';
-                      html +='<h6 class="designation">President</h6>';
-                      html +='</div>';
-                      html +='</div>';
-                      html +='</div>';
-                      html +='</div>';
+        console.log(item.leo_name + item.leo_club_officer_level+" "+ item.leo_designation_if_club_director);
+        // html += '<div class="col-sm-6 col-lg-4">';
+        // html += '  <div class="team-member">';
+        // html += '  <div class="thumb">';
+        // html +='  <img src="'+item.leo_image+'" alt="Image">';
+        // html +='<div class="social-icons">';
+        //   html +='  <a href="#"><i class="icofont-facebook"></i></a>';
+        //   html +='<a href="#"><i class="icofont-skype"></i></a>';
+        //   html +='<a href="#"><i class="icofont-twitter"></i></a>';
+        //   html +=' </div>';
+        //   html +='</div>';
+        //   html +='<div class="content">';
+        //     html +='<div class="member-info">';
+        //       html +='<h4 class="name"><a href="#/">'+item.leo_name+'</a></h4>';
+        //       html +='<h6 class="designation">'+item.leo_is_club_officer+'</h6>';
+        //       html +='</div>';
+        //       html +='</div>';
+        //       html +='</div>';
+        //       html +='</div>';
+
+        if (item.leo_is_club_officer === "1" || item.leo_designation_if_club_director!=null ) {
+            // console.log(item.leo_name + item.leo_club_officer_level + item.leo_image);
+          html += '<div class="col-sm-6 col-lg-4">';
+          html += '  <div class="team-member">';
+          html += '  <div class="thumb">';
+          html += '  <img src="' + item.leo_image + '" alt="Image">';
+          html += '<div class="social-icons">';
+          html += '  <a href="#"><i class="icofont-facebook"></i></a>';
+          html += '<a href="#"><i class="icofont-skype"></i></a>';
+          html += '<a href="#"><i class="icofont-twitter"></i></a>';
+          html += ' </div>';
+          html += '</div>';
+          html += '<div class="content">';
+          html += '<div class="member-info">';
+          html += '<h4 class="name"><a href="#/">' + item.leo_name + '</a></h4>';
+          item.leo_club_officer_level === "1" ? html += '<h6 class="designation">President</h6>' : 
+          item.leo_club_officer_level === "2" ? html += '<h6 class="designation">Vice President</h6>' : 
+          item.leo_club_officer_level === "3" ? html += '<h6 class="designation">Secretary</h6>' :
+          item.leo_club_officer_level === "4" ? html += '<h6 class="designation">Tresurer</h6>' : 
+          html += '<h6 class="designation">'+item.leo_designation_if_club_director+'</h6>'
+            
+
+          html += '</div>';
+          html += '</div>';
+          html += '</div>';
+          html += '</div>';
+
+        }
             // if (item.leo_club_officer_level === "1") {
 
             //     document.getElementById('president-title').innerText = item.leo_name;
