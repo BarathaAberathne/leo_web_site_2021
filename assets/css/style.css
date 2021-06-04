@@ -5520,6 +5520,7 @@ table p {
   padding: 62px 35px 48px 43px;
   position: relative;
   z-index: 1;
+  height: 100%;
 }
 @media only screen and (max-width: 479.98px) {
   .content-box-item {
@@ -8291,6 +8292,7 @@ table p {
 .icon-box-style1 .icon-box-item {
   background-color: #00693e;
   padding: 52px 47px 44px 58px;
+  height: 100%;
 }
 @media only screen and (max-width: 1199px) {
   .icon-box-style1 .icon-box-item {
