@@ -290,24 +290,30 @@
       </section>
       <!--== End About Area ==-->
 
-      <!--== Start Causes Area ==-->
+      <!--== Start Project Area ==-->
       <section class="causes-area causes-default-area">
         <div class="container">
           <div class="row">
             <div class="col-lg-8 m-auto">
               <div class="section-title text-center" data-aos="fade-up" data-aos-duration="1000">
-                <h5 class="subtitle line-theme-color">Our Journey</h5>
+                <h5 class="subtitle line-theme-color">Recent Projects</h5>
                 <h2 class="title title-style">Our Experience Can Change Your Life <img class="img-shape"
                     src="assets/img/shape/3.png" alt="Image-Givest"></h2>
               </div>
+              
             </div>
           </div>
+          
           <div class="row" data-aos="fade-up" data-aos-duration="1000" id="blog_post_list">
 
           </div>
+          <a  href="projects.html">
+            <p class="text-center fs-5 mt-3"><u>See more projects</u></p>
+          </a>
+          
         </div>
       </section>
-      <!--== End Causes Area ==-->
+      <!--== End Project Area ==-->
 
       <!--== Start Testimonial Area ==-->
       <section class="testimonial-area testimonial-default-area bgcolor-theme3">
@@ -789,22 +795,10 @@
 
   <!--=== Custom Js ===-->
   <script src="assets/js/custom.js"></script>
-  <script src="assets/js/fb-albums.js">
+  <script src="assets/js/recent-projects.js">
   </script>
   <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
-  <script>
-    var image = document.getElementById("img-slider");
-    var currentPos = 0;
-    var images = ["assets/img/slider/1.jpg", "assets/img/slider/2.jpg", "assets/img/slider/3.jpg"]
-
-    function volgendefoto() {
-      if (++currentPos >= images.length)
-        currentPos = 0;
-
-      image.src = images[currentPos];
-    }
-    setInterval(volgendefoto, 3000);
-  </script>
+  
 
   <script>
     var slideIndex = 0;
@@ -830,13 +824,7 @@
   </script>
 
 
-  <!-- <script>
-
-    var description = " Summary : sadasdasd | Date  : 2012/02/02 ";
-    var summaryTemp = description.split('|')[0];
-    var Summary = summaryTemp.split(':')[1];
-    console.log('lalalala' + Summary);
-  </script> -->
+  
 </body>
 
 </html>
