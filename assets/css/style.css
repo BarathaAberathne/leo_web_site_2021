@@ -6129,7 +6129,7 @@ table p {
 }
 
 .volunteer-page-wrapper .team-area {
-  padding: 145px 0 91px;
+  padding: 50px 0 91px;
 }
 @media only screen and (max-width: 1199px) {
   .volunteer-page-wrapper .team-area {
@@ -6389,7 +6389,7 @@ table p {
 }
 
 .causes-page-wrapper .causes-area.causes-default-area {
-  padding: 148px 0 152px;
+  padding: 50px 0 152px;
 }
 @media only screen and (max-width: 1199px) {
   .causes-page-wrapper .causes-area.causes-default-area {
@@ -11054,7 +11054,7 @@ table p {
 }
 
 .contact-page-wrapper .contact-area {
-  padding: 150px 0 390px;
+  padding: 50px 0 390px;
 }
 @media only screen and (max-width: 1199px) {
   .contact-page-wrapper .contact-area {
