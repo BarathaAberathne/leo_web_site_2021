@@ -7346,7 +7346,7 @@ table p {
 -----------------------------------------------------------------------
 */
 .testimonial-area.testimonial-default-area {
-  padding: 150px 0 148px;
+  padding: 150px 0 300px;
 }
 @media only screen and (max-width: 1199px) {
   .testimonial-area.testimonial-default-area {
