@@ -300,17 +300,17 @@
                 <h2 class="title title-style">Our Experience Can Change Your Life <img class="img-shape"
                     src="assets/img/shape/3.png" alt="Image-Givest"></h2>
               </div>
-              
+
             </div>
           </div>
-          
+
           <div class="row" data-aos="fade-up" data-aos-duration="1000" id="blog_post_list">
 
           </div>
-          <a  href="projects.html">
+          <a href="projects.html">
             <p class="text-center fs-5 mt-3"><u>See more projects</u></p>
           </a>
-          
+
         </div>
       </section>
       <!--== End Project Area ==-->
@@ -450,40 +450,8 @@
                 <h2 class="title title-style">Join Recent Fundraising Event Of Givest. <img class="img-shape"
                     src="assets/img/shape/3.png" alt="Image-Givest"></h2>
               </div>
-              <div class="events-content events-list" data-aos="fade-up" data-aos-duration="1000">
-                <div class="event-item">
-                  <div class="thumb">
-                    <img class="thumb-img" src="assets/img/events/1.jpg" alt="Image-Givest">
-                    <a href="event-details.html" class="btn-theme btn-gradient btn-size-sm">Join Now <img
-                        class="icon icon-img" src="assets/img/icons/arrow-line-right.png" alt="Icon"></a>
-                  </div>
-                  <div class="content">
-                    <div class="event-info">15 January 2021 // <span>Education</span></div>
-                    <h4 class="event-name"><a href="event-details.html">Need School For Mozambique Children.</a></h4>
-                  </div>
-                </div>
-                <div class="event-item">
-                  <div class="thumb">
-                    <img class="thumb-img" src="assets/img/events/2.jpg" alt="Image-Givest">
-                    <a href="event-details.html" class="btn-theme btn-gradient btn-size-sm">Join Now <img
-                        class="icon icon-img" src="assets/img/icons/arrow-line-right.png" alt="Icon"></a>
-                  </div>
-                  <div class="content">
-                    <div class="event-info">15 January 2021 // <span>Education</span></div>
-                    <h4 class="event-name"><a href="event-details.html">Need School For Mozambique Children.</a></h4>
-                  </div>
-                </div>
-                <div class="event-item">
-                  <div class="thumb">
-                    <img class="thumb-img" src="assets/img/events/3.jpg" alt="Image-Givest">
-                    <a href="event-details.html" class="btn-theme btn-gradient btn-size-sm">Join Now <img
-                        class="icon icon-img" src="assets/img/icons/arrow-line-right.png" alt="Icon"></a>
-                  </div>
-                  <div class="content">
-                    <div class="event-info">15 January 2021 // <span>Education</span></div>
-                    <h4 class="event-name"><a href="event-details.html">Need School For Mozambique Children.</a></h4>
-                  </div>
-                </div>
+              <div id="video_list" class="events-content events-list" data-aos="fade-up" data-aos-duration="1000">
+                
               </div>
             </div>
             <div class="col-8 offset-2 col-sm-8 offset-sm-2 col-md-8 offset-md-2 col-lg-4 offset-lg-0">
@@ -492,7 +460,7 @@
                   <img src="assets/img/photos/event1.png" alt="Image-Givest">
                   <div class="play-video-btn">
                     <a class="btn-play play-video-popup wave-btn"
-                      href="https://player.vimeo.com/video/174392490?dnt=1&amp;app_id=122963"><span></span><span></span><span></span>
+                      href="https://www.youtube.com/watch?v=94DJFWaGljo"><span></span><span></span><span></span>
                       <div class="icon"><img src="assets/img/icons/play.png" alt="Icon"></div>
                     </a>
                   </div>
@@ -794,12 +762,12 @@
   <script src="assets/js/jquery.easypiechart.min.js"></script>
 
   <!--=== Custom Js ===-->
+
   <script src="assets/js/custom.js"></script>
+
   <script src="assets/js/recent-projects.js">
   </script>
   <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
-  
-
   <script>
     var slideIndex = 0;
     showSlides();
@@ -822,9 +790,74 @@
       setTimeout(showSlides, 4000); // Change image every 2 seconds
     }
   </script>
+  <script>
+    //Youtube section
+    $(document).ready(function () {
+      var youtubeLink = 'https://www.youtube.com/channel/UCjj_tHYJgEfiUk3FwWzN-VQ';
+      var key = 'AIzaSyDwT0VGzZgbIeolRMdR4_pqyWFJx-0mcOU';
+      var channel = 'UCjj_tHYJgEfiUk3FwWzN-VQ';
+      var URL = 'https://www.googleapis.com/youtube/v3/playlists';
+      var param1 = {
+        part: 'snippet',
+        key: key,
+        maxResults: 3,
+        channelId: channel
+      }
+
+      loadPlayLists();
+      function loadPlayLists() {
+        $.getJSON(URL, param1, function (data) {
+          var playlistCount = 1;//data.items.length
+          for (let index = 0; index < playlistCount; index++) {
+            console.log(data.items[index].id);
+            var playlistId = data.items[index].id;
+            //Load videos from playlists
+            var param2 = {
+              part: 'snippet',
+              key: key,
+              maxResults: 3,
+              playlistId: playlistId
+            }
+            var URL2 = 'https://www.googleapis.com/youtube/v3/playlistItems';
+            loadVideos();
+            function loadVideos() {
+              $.getJSON(URL2, param2, function (data2) {
+                var videoCount = data2.items.length;
+                console.log(videoCount);
+                html = '';
+                for (let index = 0; index < videoCount; index++) {
+                  console.log('video title' + data2.items[index].snippet.title);
+                  var title = data2.items[index].snippet.title;
+                  console.log('video date' + data2.items[index].snippet.publishedAt);
+                  var date = data2.items[index].snippet.publishedAt;
+                  console.log('video thumbnail : ' + data2.items[index].snippet.thumbnails.high.url);
+                  var thumb = data2.items[index].snippet.thumbnails.high.url;
+                  html += '<div id="video_box" class="event-item">';
+                  html += '<div class="thumb">';
+                  html += '  <img class="thumb-img" src="'+thumb+'" alt="Image-Givest">';
+                  html += '  <a href="'+youtubeLink+'" target="_blank" class="btn-theme btn-gradient btn-size-sm">Join Now <img';
+                  html += '      class="icon icon-img" src="assets/img/icons/arrow-line-right.png" alt="Icon"></a>';
+                  html += '</div>';
+                  html += '<div class="content">';
+                  html += '  <div class="event-info"><span>'+date+'</span></div>';
+                  html += '  <h4 class="event-name"><a href="'+youtubeLink+'" target="_blank">'+title+'</a></h4>';
+                  html += '</div>';
+                  html += '</div>   ';
+                  $("#video_list").empty().append(html);
+
+                }
+
+              })
+
+            }
+          }
+        })
+      }
+    });
+  </script>
 
 
-  
+
 </body>
 
 </html>
