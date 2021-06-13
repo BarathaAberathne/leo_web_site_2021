@@ -1622,7 +1622,8 @@ table p {
   border-radius: 3px;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
-  background-color: #00693e;
+  /* background-color: #00693e; */
+  background-image: url("assets/img/logo.png");
 }
 @keyframes la-rotateplane {
   0% {
@@ -4377,31 +4378,36 @@ table p {
   position: relative;
 }
 .home-slider-area.slider-default .home-slider-content .home-slider-item {
-  height: 900px;
+  height: 630px;
 }
 @media only screen and (max-width: 1399px) {
   .home-slider-area.slider-default .home-slider-content .home-slider-item {
-    height: 800px;
+    height: 550px;
   }
 }
 @media only screen and (max-width: 1199px) {
   .home-slider-area.slider-default .home-slider-content .home-slider-item {
-    height: 680px;
+    height: 480px;
   }
 }
 @media only screen and (max-width: 991px) {
   .home-slider-area.slider-default .home-slider-content .home-slider-item {
-    height: 560px;
+    height: 390px;
   }
 }
 @media only screen and (max-width: 767px) {
   .home-slider-area.slider-default .home-slider-content .home-slider-item {
-    height: 400px;
+    height: 250px;
   }
 }
 @media only screen and (max-width: 575px) {
   .home-slider-area.slider-default .home-slider-content .home-slider-item {
-    height: 360px;
+    height: 210px;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .home-slider-area.slider-default .home-slider-content .home-slider-item {
+    height: 125px;
   }
 }
 .home-slider-area.slider-default .slider-content-area {
@@ -4414,23 +4420,34 @@ table p {
 @media (max-width: 1799px) {
   .home-slider-area.slider-default .slider-content-area {
     padding-top: 45px;
+    height: 85%;
   }
 }
 @media only screen and (max-width: 991px) {
   .home-slider-area.slider-default .slider-content-area {
-    padding-top: 15px;
+    padding-top: 35px;
+    height: 85%;
   }
 }
 @media only screen and (max-width: 767px) {
   .home-slider-area.slider-default .slider-content-area {
-    padding-top: 60px;
+    padding-top: 50px;
+    height: 85%;
   }
 }
 @media only screen and (max-width: 575px) {
   .home-slider-area.slider-default .slider-content-area {
-    padding-top: 58px;
+    padding-top: 30px;
+    height: 75%;
   }
 }
+@media only screen and (max-width: 380px) {
+  .home-slider-area.slider-default .slider-content-area {
+    padding-top: 25px;
+    height: 75%;
+  }
+}
+
 @media (min-width: 1400px) and (max-width: 1799px) {
   .home-slider-area.slider-default .slider-content-area .container {
     max-width: 1397px;
@@ -4443,8 +4460,8 @@ table p {
 }
 @media (max-width: 1799px) {
   .home-slider-area.slider-default .slider-content-area .content {
-    margin-top: 15px;
-    padding-right: 135px;
+    margin-top: 45px;
+    padding-right: 75px;
   }
 }
 @media only screen and (max-width: 1199px) {
@@ -4475,7 +4492,7 @@ table p {
     .slider-content-area
     .content
     .subtitle-content {
-    margin-bottom: 20px;
+    margin-bottom: 5px;
   }
 }
 .home-slider-area.slider-default
@@ -4495,6 +4512,16 @@ table p {
     img {
     top: -4px;
     width: 30px;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .home-slider-area.slider-default
+    .slider-content-area
+    .content
+    .subtitle-content
+    img {
+    top: -2px;
+    width: 20px;
   }
 }
 .home-slider-area.slider-default
@@ -4518,17 +4545,27 @@ table p {
     .content
     .subtitle-content
     h6 {
-    font-size: 18px;
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .home-slider-area.slider-default
+    .slider-content-area
+    .content
+    .subtitle-content
+    h6 {
+    font-size: 12px;
   }
 }
 .home-slider-area.slider-default .slider-content-area .content .tittle-wrp {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 .home-slider-area.slider-default .slider-content-area .content .tittle-wrp h2 {
   font-size: 64px;
   line-height: 1.0934;
-  padding-top: 30px;
-  padding-bottom: 40px;
+  padding-top: 20px;
+  padding-bottom: 50px;
 }
 @media only screen and (max-width: 1399px) {
   .home-slider-area.slider-default
@@ -4536,7 +4573,8 @@ table p {
     .content
     .tittle-wrp
     h2 {
-    font-size: 60px;
+    font-size: 50px;
+    padding-bottom: 40px;
   }
 }
 @media only screen and (max-width: 1199px) {
@@ -4545,7 +4583,8 @@ table p {
     .content
     .tittle-wrp
     h2 {
-    font-size: 50px;
+    font-size: 40px;
+    padding-bottom: 40px;
   }
 }
 @media only screen and (max-width: 991px) {
@@ -4554,7 +4593,8 @@ table p {
     .content
     .tittle-wrp
     h2 {
-    font-size: 38px;
+    font-size: 25px;
+    padding-bottom: 30px;
   }
 }
 @media only screen and (max-width: 575px) {
@@ -4563,8 +4603,20 @@ table p {
     .content
     .tittle-wrp
     h2 {
-    font-size: 30px;
+    font-size: 20px;
     line-height: 1.2;
+    padding-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .home-slider-area.slider-default
+    .slider-content-area
+    .content
+    .tittle-wrp
+    h2 {
+    font-size: 15px;
+    line-height: 1.2;
+    padding-bottom: 10px;
   }
 }
 .home-slider-area.slider-default
@@ -4638,20 +4690,20 @@ table p {
     .btn-wrp
     .btn-theme {
     margin-right: 10px;
-    min-width: 155px;
-    padding: 15px 27px;
+    min-width: 139px;
+    padding: 9px 25px;
   }
 }
-@media only screen and (max-width: 359.98px) {
+@media only screen and (max-width: 380px) {
   .home-slider-area.slider-default
     .slider-content-area
     .content
     .btn-wrp
     .btn-theme {
-    font-size: 14px;
+    font-size: 11px;
     margin-right: 7px;
-    min-width: 130px;
-    padding: 12px 18px;
+    min-width: 103px;
+    padding: 5px 18px;
   }
 }
 @media only screen and (max-width: 991px) {
@@ -5493,7 +5545,7 @@ table p {
 }
 @media only screen and (max-width: 991px) {
   .about-page-wrapper .about-area .about-content {
-    padding-left: 0;
+    padding-left: 30px;
   }
 }
 .about-page-wrapper .about-area .about-content .text-style {
@@ -6861,6 +6913,8 @@ table p {
   min-width: 240px;
   overflow: hidden;
   position: relative;
+  height: 146px;
+  width: 240px;
 }
 .event-item .thumb .thumb-img {
   width: 100%;
@@ -6893,6 +6947,7 @@ table p {
 .event-item .content {
   background-color: #f7f7f7;
   padding: 30px;
+  height: 146px;
 }
 .event-item .content .event-info {
   color: #001d23;
@@ -6903,7 +6958,7 @@ table p {
   color: #00693e;
 }
 .event-item .content .event-name {
-  font-size: 24px;
+  font-size: 20px;
   line-height: 1.334;
 }
 @media only screen and (max-width: 1199px) {
