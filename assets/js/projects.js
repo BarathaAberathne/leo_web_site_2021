@@ -1,5 +1,5 @@
 var token =
-  "EAAKix4m9HeQBAEC5PQKyTZBm0PVzO9x92WObzlDMwlQ50IpMjQNDJlsf06KXNemwowp0mHZBdIyMh94TC8DbYpT8JemcOKjbOHxHP4fO7U3cq7ZClmI17s2DjJCVGPfOZAsAMMTh9ONr92SpJ1OnOkR3RDlatCXWg5KY1SNMTRcaACMoFKZB3";
+  "EAAKix4m9HeQBAIyrE05eq2EzLMBMZA4QeHgudUjP0ZAk5E7qz1xOZC8NkXpJ3w4wzWRh2geBcQaeQTITP0OI8dd8gJV2L8G0PIrZCXLkYlVncHSEMcl5mdgZAMC8IfQVMS5rsexlHcrL8FxbSf8MF2AejRObw6DXuPMp9iQjazwZDZD";
 window.fbAsyncInit = function () {
   FB.init({
     appId: "741927846485476",
@@ -8,14 +8,16 @@ window.fbAsyncInit = function () {
     version: "v4.0",
   });
   FB.api(
-    "/leoclubofmoratuwarathmalana/albums?fields=description,picture.height(2048),created_time,name,comments,count,cover_photo,likes",
+    "/leoclubofmoratuwaratmalana/albums?fields=description,picture.height(2048),created_time,name,comments,count,cover_photo,likes",
     "GET",
     {},
     function (response) {
+              console.log('hereee');
+
       var count = Object.keys(response.data).length;
       console.log(count);
       var html = "";
-      for (let i = 0; i <= 6; i++) {
+      for (let i = 0; i <= count; i++) {
         var AlbumDescription = response.data[i].description;
         if (typeof AlbumDescription !== "undefined") {
           if (AlbumDescription.includes("Summary")) {
