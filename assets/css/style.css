@@ -168,8 +168,8 @@ table p {
 }
 
 .row {
-  margin-right: -15px;
-  margin-left: -15px;
+  margin-right: 5px;
+  margin-left: 5px;
 }
 .row > [class*="col-"] {
   padding-right: 15px;
@@ -6741,22 +6741,22 @@ table p {
 }
 @media only screen and (max-width: 1199px) {
   .events-area.events-default-area {
-    padding: 98px 0 70px;
+    padding: 98px 0 300px;
   }
 }
 @media only screen and (max-width: 991px) {
   .events-area.events-default-area {
-    padding: 98px 0 187px;
+    padding: 98px 0 300px;
   }
 }
 @media only screen and (max-width: 767px) {
   .events-area.events-default-area {
-    padding: 78px 0 157px;
+    padding: 78px 0 300px;
   }
 }
 @media only screen and (max-width: 479.98px) {
   .events-area.events-default-area {
-    padding: 78px 0 140px;
+    padding: 78px 0 160px;
   }
 }
 .events-area.events-default-area .section-title {
