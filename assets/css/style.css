@@ -7381,6 +7381,148 @@ table p {
 	Gallery CSS
 -----------------------------------------------------------------------
 */
+.gallery-area.gallery-default-area {
+  padding: 150px 0 300px;
+}
+@media only screen and (max-width: 1199px) {
+  .gallery-area.gallery-default-area {
+    padding: 100px 0 200px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .gallery-area.gallery-default-area {
+    padding: 80px 0 200px;
+  }
+}
+@media only screen and (max-width: 765px) {
+  .gallery-area.gallery-default-area {
+    padding: 80px 0 200px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .gallery-area.gallery-default-area {
+    padding: 80px 0 200px;
+  }
+}
+.gallery-area.gallery-default-area .title-wrp {
+  align-items: center;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  left: 0;
+  min-height: 530px;
+  padding-left: 70px;
+  padding-right: 7%;
+  position: absolute;
+  width: calc(50% - 185px);
+}
+@media (max-width: 1599px) {
+  .gallery-area.gallery-default-area .title-wrp {
+    padding-right: 4%;
+    width: calc(50% - 155px);
+  }
+}
+@media only screen and (max-width: 1399px) {
+  .gallery-area.gallery-default-area .title-wrp {
+    padding-left: 55px;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .gallery-area.gallery-default-area .title-wrp {
+    left: calc(0% - 30px);
+    padding-right: 30px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .gallery-area.gallery-default-area .title-wrp {
+    justify-content: flex-start;
+    left: auto;
+    margin-bottom: 70px;
+    min-height: auto;
+    padding: 40px 0 5px 35px;
+    position: relative;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .gallery-area.gallery-default-area .title-wrp {
+    margin-bottom: 50px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .gallery-area.gallery-default-area .title-wrp {
+    padding-right: 30px;
+  }
+}
+@media only screen and (max-width: 479.98px) {
+  .gallery-area.gallery-default-area .title-wrp {
+    text-align: center;
+  }
+}
+.gallery-area.gallery-default-area .title-wrp:after {
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0.902;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background: #00b356;
+  background-image: -ms-linear-gradient(-30deg, #00693e 0%, #00b356 100%);
+  background: linear-gradient(-30deg, #00693e 0%, #00b356 100%);
+}
+.gallery-area.gallery-default-area .title-wrp .section-title {
+  margin-bottom: 33px;
+  max-width: 505px;
+  position: relative;
+  z-index: 1;
+}
+.gallery-area.gallery-default-area .title-wrp .section-title .title {
+  margin-bottom: 0;
+  text-shadow: 3px 3px 0 rgba(0, 29, 35, 0.45);
+}
+@media only screen and (max-width: 991px) {
+  .gallery-area.gallery-default-area
+    .title-wrp
+    .section-title
+    .title.title-style {
+    margin-top: 10px;
+  }
+}
+.gallery-area.gallery-default-area
+  .title-wrp
+  .section-title
+  .title.title-style
+  .img-shape {
+  transform: translate(-21.5%, -50%);
+  -webkit-transform: translate(-21.5%, -50%);
+  -moz-transform: translate(-21.5%, -50%);
+  -ms-transform: translate(-21.5%, -50%);
+  -o-transform: translate(-21.5%, -50%);
+}
+@media only screen and (max-width: 1399px) {
+  .gallery-area.gallery-default-area
+    .title-wrp
+    .section-title
+    .title.title-style
+    .img-shape {
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+  }
+}
+.gallery-area.gallery-default-area .gallery-content {
+  padding-right: 70px;
+}
+@media only screen and (max-width: 1199px) {
+  .gallery-area.gallery-default-area .gallery-content {
+    padding-right: 0;
+  }
+}
 .gallery-item .thumb {
   position: relative;
 }
@@ -7426,16 +7568,26 @@ table p {
 -----------------------------------------------------------------------
 */
 .testimonial-area.testimonial-default-area {
-  padding: 150px 0 150px;
+  padding: 150px 0 50px;
 }
 @media only screen and (max-width: 1199px) {
   .testimonial-area.testimonial-default-area {
-    padding: 100px 0 98px;
+    padding: 100px 0 50px;
   }
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 991px) {
   .testimonial-area.testimonial-default-area {
-    padding: 80px 0 78px;
+    padding: 80px 0 50px;
+  }
+}
+@media only screen and (max-width: 765px) {
+  .testimonial-area.testimonial-default-area {
+    padding: 80px 0 50px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .testimonial-area.testimonial-default-area {
+    padding: 80px 0 50px;
   }
 }
 .testimonial-area.testimonial-default-area .title-wrp {
