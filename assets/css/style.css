@@ -3641,7 +3641,7 @@ table p {
     padding: 11px 16px;
   }
 }
-@media (max-width: 384px) {
+@media (max-width: 400px) {
   .header-area.header-default
     .header-align
     .header-action-area
@@ -4414,7 +4414,7 @@ table p {
 }
 @media only screen and (max-width: 575px) {
   .home-slider-area.slider-default .home-slider-content .home-slider-item {
-    height: 210px;
+    height: 160px;
   }
 }
 @media only screen and (max-width: 380px) {
@@ -4473,7 +4473,7 @@ table p {
 @media (max-width: 1799px) {
   .home-slider-area.slider-default .slider-content-area .content {
     margin-top: 45px;
-    padding-right: 75px;
+    padding-right: 50px;
   }
 }
 @media only screen and (max-width: 1199px) {
@@ -4595,7 +4595,7 @@ table p {
     .content
     .tittle-wrp
     h2 {
-    font-size: 40px;
+    font-size: 38px;
     padding-bottom: 40px;
   }
 }
@@ -4617,7 +4617,7 @@ table p {
     h2 {
     font-size: 20px;
     line-height: 1.2;
-    padding-bottom: 20px;
+    padding-bottom: 5px;
   }
 }
 @media only screen and (max-width: 380px) {
