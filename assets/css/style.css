@@ -5334,7 +5334,7 @@ table p {
   }
 }
 .about-area.about-default-area:before {
-  /* background-color: #f7f7f7; */
+  background-color: #f7f7f7;
   bottom: 0;
   content: "";
   height: calc(100% + 225px);
@@ -7568,11 +7568,11 @@ table p {
 -----------------------------------------------------------------------
 */
 .testimonial-area.testimonial-default-area {
-  padding: 150px 0 50px;
+  padding: 100px 0 50px;
 }
 @media only screen and (max-width: 1199px) {
   .testimonial-area.testimonial-default-area {
-    padding: 100px 0 50px;
+    padding: 90px 0 50px;
   }
 }
 @media only screen and (max-width: 991px) {
@@ -7760,13 +7760,13 @@ table p {
 }
 .testimonial-single .client-content p {
   color: #c2c2c2;
-  font-size: 20px;
+  font-size: 16px;
   font-family: Verdana, sans-serif;
   line-height: 1.6;
 }
 @media only screen and (max-width: 479.98px) {
   .testimonial-single .client-content p {
-    font-size: 15px;
+    font-size: 12px;
   }
 }
 .testimonial-single .client-content .quote-icon {
