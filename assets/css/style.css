@@ -6285,11 +6285,11 @@ table p {
 }
 .causes-item .content {
   background-color: #f7f7f7;
-  padding: 31px 25px 10px;
+  padding: 31px 18px 10px;
 }
 @media only screen and (max-width: 1199px) {
   .causes-item .content {
-    padding: 32px 20px 10px;
+    padding: 32px 16px 10px;
   }
 }
 .causes-item .content .donate-info {
@@ -9235,7 +9235,7 @@ table p {
   background: none;
   color: transparent;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #939697;
+  -webkit-text-stroke-color: #009614;
   -webkit-text-fill-color: unset;
 }
 .volunteer-form .volunteer-form-wrapper .form-group {
