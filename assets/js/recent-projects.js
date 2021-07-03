@@ -1,6 +1,7 @@
 console.log('FB script started');
+
 var token =
-  "EAAKix4m9HeQBAIyrE05eq2EzLMBMZA4QeHgudUjP0ZAk5E7qz1xOZC8NkXpJ3w4wzWRh2geBcQaeQTITP0OI8dd8gJV2L8G0PIrZCXLkYlVncHSEMcl5mdgZAMC8IfQVMS5rsexlHcrL8FxbSf8MF2AejRObw6DXuPMp9iQjazwZDZD";
+  "EAAKix4m9HeQBAAg9iI7gE8A5nYZBkTe1CcZBj4qlJmvMyRkViMY8IbfklAmQzJAJUuACpJDUT4kI4rMs8O7q1OQThyCZCi6dsYj952i6KaHLbwPBiHpqjBxJ9Ao20644cz9G0BBy4uorUyzmJdysWl1cRqy1eFrenQEobzNLwZDZD";
 window.fbAsyncInit = function () {
   FB.init({
     appId: "741927846485476",
@@ -13,8 +14,7 @@ window.fbAsyncInit = function () {
     "GET",
     {},
     function (response) {
-      console.log('API initiated');
-
+      console.log('API initiateddd');
       var count = Object.keys(response.data).length;
       console.log('count is '+count);
       var html = "";
