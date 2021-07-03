@@ -1,7 +1,5 @@
-console.log('FB script started');
-
 var token =
-  "EAAKix4m9HeQBAAg9iI7gE8A5nYZBkTe1CcZBj4qlJmvMyRkViMY8IbfklAmQzJAJUuACpJDUT4kI4rMs8O7q1OQThyCZCi6dsYj952i6KaHLbwPBiHpqjBxJ9Ao20644cz9G0BBy4uorUyzmJdysWl1cRqy1eFrenQEobzNLwZDZD";
+  "EAAKix4m9HeQBACRnatpCQ4LJ7lzJKnRnKzR7kOAwq6HlddHMtQQ9aZBsD7ss1Rx9ijhqnKGKmARZAR3ngzZA7esc8l8XhS3N7ObLNjKivSkIleYIMgLIilhs8xWCeuLlVYzuuB9p3o5BpwUouxmKaTooDZAUNZCJWFmzsDX6yYQZDZD";
 window.fbAsyncInit = function () {
   FB.init({
     appId: "741927846485476",
@@ -14,11 +12,12 @@ window.fbAsyncInit = function () {
     "GET",
     {},
     function (response) {
-      console.log('API initiateddd');
+              console.log('hereee');
+
       var count = Object.keys(response.data).length;
-      console.log('count is '+count);
+      console.log(count);
       var html = "";
-      for (let i = 0; i < count; i++) {
+      for (let i = 0; i <= count; i++) {
         var AlbumDescription = response.data[i].description;
         if (typeof AlbumDescription !== "undefined") {
           if (AlbumDescription.includes("Summary")) {
@@ -106,7 +105,6 @@ window.fbAsyncInit = function () {
             }
           }
         }
-        console.log('end is here');
       }
     },
     { access_token: token }
